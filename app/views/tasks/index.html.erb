@@ -4,7 +4,7 @@
 
 <% @tasks.each do |task| %>
 
-<li><input type="checkbox" disabled="disabled" <%= ' checked="checked"' if task.completed == true  %>><%= task.title %></li>
+<li><input type="checkbox" disabled="disabled" <%= 'checked' if task.completed %>><%= task.title %></li>
 
 <% end %>
 
