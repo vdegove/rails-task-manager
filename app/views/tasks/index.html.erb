@@ -1,0 +1,11 @@
+<h2>My tasks</h2>
+
+<ul>
+
+<% @tasks.each do |task| %>
+
+<li><input type="checkbox" disabled="disabled" <%= ' checked="checked"' if task.completed == true  %>><%= task.title %></li>
+
+<% end %>
+
+</ul>
